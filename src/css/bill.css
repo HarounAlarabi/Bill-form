@@ -1,0 +1,56 @@
+
+
+.bill-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-size: 1.5rem;
+  }
+
+  .bill-container div {
+    margin-bottom: 15px;
+  }
+
+  label {
+    display: flex;
+    margin-bottom: 5px;
+  }
+
+  input,
+  select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100px;
+    margin: 0 auto;
+    display: block;
+  }
+
+
+  button:hover {
+    background-color: #45a049;
+  }
+
+  h3 {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin: 7px;
+    padding: 10px;
+
+}

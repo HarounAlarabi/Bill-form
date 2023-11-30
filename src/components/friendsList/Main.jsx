@@ -82,7 +82,7 @@ function Main() {
             </Button>
           </div>
           {selectedFriend && (
-            <FormSpiltBill selectedFriend={selectedFriend} onSpiltBill={handleSpiltBill}/>
+            <FormSpiltBill selectedFriend={selectedFriend} onSpiltBill={handleSpiltBill} key={selectedFriend.id}/>
           )}
         </div>
       </div>

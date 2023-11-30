@@ -4,25 +4,25 @@ import "../../css/bill.css"
 
 function Bill() {
   const [bill, setBill] = useState("");
-  const [percentage1, setPerecentage1] = useState(0);
-  const [percentage2, setPerecentage2] = useState(0);
+  const [percentage1, setPercentage1] = useState(0);
+  const [percentage2, setPercentage2] = useState(0);
 
   const tips = bill * ((percentage1 + percentage2) / 200);
 
   function handleRest() {
     setBill("");
-    setPerecentage1(0);
-    setPerecentage2(0);
+    setPercentage1(0);
+    setPercentage2(0);
   }
   return (
     <>
       <Navbar />
       <div  className="bill-container">
         <BillInput bill={bill} onSetBill={setBill} />
-        <Percentage percentage={percentage1} onSelect={setPerecentage1}>
+        <Percentage percentage={percentage1} onSelect={setPercentage1}>
           How did you like the service
         </Percentage>
-        <Percentage percentage={percentage2} onSelect={setPerecentage2}>
+        <Percentage percentage={percentage2} onSelect={setPercentage2}>
           How did your friend like the service
         </Percentage>
         {bill > 0 && <OutPut bill={bill} tips={tips} />}
